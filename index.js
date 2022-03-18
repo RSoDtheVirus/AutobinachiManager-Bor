@@ -14,23 +14,13 @@ client.on("ready", () => {
 })
 
 //messaggi
-
 client.on("messageCreate", (message) => {
-    if (message.content == "autobianchi"){
-        message.reply("vaffanculo zoccola")
-    }
-    else if (message.content == "sapobully"){
-        message.reply("https://www.honiro.it/wp-content/uploads/2020/04/WhatsApp-Image-2020-04-24-at-12.51.31.jpeg ")
-    }
-    else if (message.content == "hey mercedes"){
-        message.reply("https://cdn.discordapp.com/attachments/768898886696697910/881487180323758120/themillionaire10-20190514_102123-60382270_2087493697966081_8624868350706787525_n..mp4")
-    }
-    else if (message.content == "server rsod"){
-        message.reply("https://cdn.discordapp.com/attachments/768898886696697910/954124775041667122/Z.png")
-    }
-    else if (message.content == "Daihatsu move 2WD"){
-        message.reply("@RSoDTheVirus#1512 ")
-    }
+    let message_response = {"sapobully": "https://www.honiro.it/wp-content/uploads/2020/04/WhatsApp-Image-2020-04-24-at-12.51.31.jpeg",
+    "autobianchi" : "vaffanculo zoccola",  
+    "hey mercedes" : "https://cdn.discordapp.com/attachments/768898886696697910/881487180323758120/themillionaire10-20190514_102123-60382270_2087493697966081_8624868350706787525_n..mp4",
+    "server rsod": "https://cdn.discordapp.com/attachments/768898886696697910/954124775041667122/Z.png",
+}
+
 })
 
 client.login(process.env.TOKEN)
